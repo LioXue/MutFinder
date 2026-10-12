@@ -1,0 +1,562 @@
+2026/10/11
+
+        csv_path="./data/500_0.2_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.2_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.1,
+        column_dropout=0.1,
+        ffn_dropout=0.1,
+
+        num_epochs=30,
+        early_stop=15,
+        stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=0,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4
+
+    result
+        #1: 位置  99  value = -0.252333
+        #2: 位置   0  value = -0.167694
+        #1: 互作0-161  value = +0.008241
+        #2: 互作0-45  value = +0.007630
+        #3: 互作156-156  value = +0.007262
+        #4: 互作145-145  value = +0.005762
+        #5: 互作156-161  value = +0.005706
+        #6: 互作0-86  value = +0.005524
+        #7: 互作44-156  value = +0.005144
+        #8: 互作161-161  value = +0.005022
+        #9: 互作139-145  value = +0.005015
+        #10: 互作138-156  value = +0.004993
+        #1: 互作105-0  value = -0.011862
+        #2: 互作11-0  value = -0.011846
+        #3: 互作57-0  value = -0.011778
+        #4: 互作74-0  value = -0.011774
+        #5: 互作60-0  value = -0.011650
+        #6: 互作53-0  value = -0.011618
+        #7: 互作84-0  value = -0.011592
+        #8: 互作82-0  value = -0.011585
+        #9: 互作9-0  value = -0.011574
+        #10: 互作30-0  value = -0.011470
+
+2026/10/11
+
+        csv_path="./data/500_0.2_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.2_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=0,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #1: 位置   0  value = -0.611724
+        #2: 位置  36  value = -0.077393
+        #3: 位置 116  value = -0.072836
+        #4: 位置  11  value = -0.071934
+        #5: 位置 140  value = -0.067478
+        #159: 位置 144  value = +0.067049
+        #160: 位置 145  value = +0.070846
+        #161: 位置  88  value = +0.084404
+        #162: 位置  10  value = +0.096054
+        #163: 位置  25  value = +0.111479
+        #1: 互作0-14  value = +0.029186
+        #2: 互作0-132  value = +0.028305
+        #3: 互作0-135  value = +0.028225
+        #4: 互作0-147  value = +0.027742
+        #5: 互作0-141  value = +0.027630
+        #6: 互作0-35  value = +0.027199
+        #7: 互作0-79  value = +0.026990
+        #8: 互作0-124  value = +0.026988
+        #9: 互作0-92  value = +0.026728
+        #10: 互作0-139  value = +0.018150
+        #1: 互作149-0  value = -0.034499
+        #2: 互作155-0  value = -0.034377
+        #3: 互作86-0  value = -0.034360
+        #4: 互作45-0  value = -0.034216
+        #5: 互作117-0  value = -0.034137
+        #6: 互作161-0  value = -0.033987
+        #7: 互作12-0  value = -0.033692
+        #8: 互作73-0  value = -0.033666
+        #9: 互作16-0  value = -0.033650
+        #10: 互作127-0  value = -0.033292
+
+2026/10/11
+
+        csv_path="./data/500_0.1_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.1_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=0,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #1: 位置   0  value = +0.558732
+        #2: 位置   9  value = +0.175876
+        #3: 位置  53  value = +0.159839
+        #4: 位置  23  value = +0.116956
+        #5: 位置 104  value = +0.092435
+        #159: 位置 146  value = -0.070741
+        #160: 位置  57  value = -0.074378
+        #161: 位置  99  value = -0.077260
+        #162: 位置  64  value = -0.082372
+        #163: 位置  82  value = -0.102221
+        #1: 互作64-0  value = +0.010282
+        #2: 互作80-0  value = +0.010099
+        #3: 互作138-0  value = +0.008177
+        #4: 互作148-0  value = +0.008171
+        #5: 互作44-0  value = +0.008072
+        #1: 互作0-157  value = -0.007456
+        #2: 互作0-26  value = -0.007207
+        #3: 互作0-76  value = -0.007159
+        #4: 互作0-150  value = -0.007020
+        #5: 互作0-51  value = -0.007009
+
+2026/10/11
+
+        csv_path="./data/500_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=0,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #1: 位置   0  value = -0.469966
+        #2: 位置 104  value = -0.063100
+        #3: 位置  73  value = -0.050024
+        #4: 位置 116  value = -0.045632
+        #5: 位置 118  value = -0.045562
+        #159: 位置  29  value = +0.048527
+        #160: 位置  34  value = +0.051500
+        #161: 位置 158  value = +0.071246
+        #162: 位置  93  value = +0.081360
+        #163: 位置 155  value = +0.120793
+        #1: 互作88-93  value = +0.008646
+        #2: 互作69-93  value = +0.008382
+        #3: 互作67-93  value = +0.008353
+        #4: 互作81-93  value = +0.008300
+        #5: 互作34-93  value = +0.008183
+        #1: 互作0-0  value = -0.009509
+        #2: 互作67-43  value = -0.008348
+        #3: 互作114-43  value = -0.008241
+        #4: 互作88-43  value = -0.008194
+        #5: 互作146-43  value = -0.008159
+
+2026/10/11
+
+        csv_path="./data/500_0.4_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.4_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=0,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #106: 位置   0  value = +0.011347
+        #1: 互作140-112  value = +0.004368
+        #2: 互作69-112  value = +0.004309
+        #3: 互作34-112  value = +0.004303
+        #4: 互作6-112  value = +0.004247
+        #5: 互作152-112  value = +0.004107
+        #1: 互作18-126  value = -0.004901
+        #2: 互作18-33  value = -0.004626
+        #3: 互作151-33  value = -0.004610
+        #4: 互作69-33  value = -0.004484
+        #5: 互作50-126  value = -0.004354
+
+2026/10/11
+
+        csv_path="./data/500_0.4_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.4_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #1: 位置   0  value = -0.416642
+        #2: 位置  35  value = -0.054158
+        #3: 位置  24  value = -0.048287
+        #4: 位置 120  value = -0.041208
+        #5: 位置 109  value = -0.040771
+        #159: 位置 159  value = +0.029236
+        #160: 位置 156  value = +0.029566
+        #161: 位置 130  value = +0.035909
+        #162: 位置  26  value = +0.038750
+        #163: 位置  56  value = +0.059982
+        #1: 互作0-110  value = +0.004821
+        #2: 互作0-156  value = +0.004815
+        #3: 互作0-148  value = +0.004794
+        #4: 互作0-83  value = +0.004784
+        #5: 互作0-138  value = +0.004738
+        #1: 互作70-0  value = -0.003982
+        #2: 互作4-0  value = -0.003946
+        #3: 互作22-0  value = -0.003938
+        #4: 互作32-0  value = -0.003921
+        #5: 互作133-0  value = -0.003909
+
+2026/10/11
+        csv_path="./data/500_0.5_0_1.0_grande_msa.csv",
+        model_path="./model_weight/500_0.5_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=20,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        #1: 位置   0  value = -0.420072
+        #2: 位置  96  value = -0.066680
+        #3: 位置  35  value = -0.051547
+        #4: 位置  23  value = -0.050106
+        #5: 位置  83  value = -0.048038
+        #159: 位置 141  value = +0.024647
+        #160: 位置  76  value = +0.025504
+        #161: 位置  10  value = +0.031456
+        #162: 位置 129  value = +0.034155
+        #163: 位置  93  value = +0.038515
+        #1: 互作0-83  value = +0.004536
+        #2: 互作104-83  value = +0.004490
+        #3: 互作41-147  value = +0.004455
+        #4: 互作126-83  value = +0.004445
+        #5: 互作155-129  value = +0.004437
+        #1: 互作41-0  value = -0.023548
+        #2: 互作33-0  value = -0.023317
+        #3: 互作115-0  value = -0.023055
+        #4: 互作120-0  value = -0.023035
+        #5: 互作104-0  value = -0.023019
+
+2026/10/11
+        csv_path="./data/50_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/50_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=30,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=2,
+        n_seq=25,
+        batch_size=2,
+
+    result
+        loss = 0.000474
+        loss_l2 = 0.003833
+        #1: 位置 112  value = -0.823191
+        #2: 位置   0  value = -0.790453
+        #3: 位置 123  value = -0.709048
+        #4: 位置  16  value = -0.685329
+        #5: 位置  12  value = -0.608724
+        #159: 位置  11  value = -0.705852
+        #160: 位置 101  value = -0.738925
+        #161: 位置 119  value = -0.798230
+        #162: 位置 160  value = -0.862234
+        #163: 位置   8  value = -0.94533
+        #1: 互作43-98  value = +0.045264
+        #2: 互作139-98  value = +0.042766
+        #3: 互作133-98  value = +0.042540
+        #4: 互作12-98  value = +0.041918
+        #5: 互作127-98  value = +0.041676
+        #1: 互作5-68  value = -0.041910
+        #2: 互作17-68  value = -0.039735
+        #3: 互作117-68  value = -0.039213
+        #4: 互作74-68  value = -0.038736
+        #5: 互作83-68  value = -0.038452
+
+2026/10/11
+        csv_path="./data/50_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/50_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=200,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=2,
+        n_seq=25,
+        batch_size=2,
+
+    result
+        loss = 0.000019
+        loss_l2 = 0.003310
+        #1: 位置   0  value = -1.458708
+        #2: 位置 134  value = -0.346789
+        #3: 位置 156  value = -0.277243
+        #4: 位置 124  value = -0.272712
+        #5: 位置  75  value = -0.245753
+        #159: 位置 143  value = +0.268475
+        #160: 位置 117  value = +0.282242
+        #161: 位置  11  value = +0.284746
+        #162: 位置  23  value = +0.387249
+        #163: 位置 140  value = +0.404329
+        #1: 互作149-48  value = +0.027669
+        #2: 互作43-48  value = +0.027519
+        #3: 互作64-48  value = +0.027041
+        #4: 互作114-48  value = +0.026727
+        #5: 互作72-48  value = +0.026563
+        #1: 互作5-58  value = -0.023870
+        #2: 互作5-77  value = -0.022451
+        #3: 互作93-58  value = -0.020336
+        #4: 互作140-58  value = -0.020312
+        #5: 互作140-62  value = -0.019373
+
+2026/10/11
+        csv_path="./data/50a_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/50a_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=200,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=2,
+        n_seq=25,
+        batch_size=2,
+
+    result
+        #1: 位置 154  value = +0.520788
+        #2: 位置  56  value = +0.378462
+        #3: 位置  51  value = +0.376752
+        #4: 位置 148  value = +0.364235
+        #5: 位置   4  value = +0.353721
+        #6: 位置   0  value = +0.332885
+        #1: 互作54-31  value = +0.034992
+        #2: 互作98-31  value = +0.031238
+        #3: 互作141-31  value = +0.029270
+        #4: 互作39-31  value = +0.027369
+        #5: 互作159-31  value = +0.026640
+        #1: 互作61-149  value = -0.029304
+        #2: 互作61-23  value = -0.026267
+        #3: 互作33-149  value = -0.025931
+        #4: 互作61-155  value = -0.024971
+        #5: 互作41-149  value = -0.022060
+
+2026/10/11
+
+        csv_path="./data/100_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/100_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=100,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=4,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        loss = 0.000002
+        loss_l2 = 0.003415
+        #1: 位置 146  value = -2.162283
+        #2: 位置 149  value = -1.978626
+        #3: 位置  21  value = -1.801052
+        #4: 位置   0  value = -1.778249
+        #5: 位置  17  value = -1.456997
+        #159: 位置  33  value = +1.467893
+        #160: 位置 123  value = +1.559737
+        #161: 位置   7  value = +1.609454
+        #162: 位置 130  value = +2.187187
+        #163: 位置  66  value = +2.319309
+        #1: 互作23-100  value = -0.041446
+        #2: 互作7-100  value = -0.041269
+        #3: 互作161-100  value = -0.039199
+        #4: 互作45-100  value = -0.039148
+        #5: 互作43-100  value = -0.038934
+        #1: 互作154-2  value = +0.044881
+        #2: 互作122-2  value = +0.043122
+        #3: 互作7-2  value = +0.042957
+        #4: 互作70-2  value = +0.041337
+        #5: 互作110-2  value = +0.040591
+
+2026/10/11
+        csv_path="./data/100a_0.3_0_1.0_grande_msa.csv",
+        model_path="./model_weight/100a_0.3_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=5,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=100,
+        early_stop=15,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        n_msa=4,
+        n_seq=25,
+        batch_size=4,
+
+    result
+        loss = 0.000012
+        loss_l2 = 0.003329
+        #1: 位置  59  value = +1.640955
+        #33: 位置  79  value = +0.090102
+        #34: 位置   0  value = +0.088550
+        #35: 位置 145  value = +0.085934
+        #1: 互作74-17  value = +0.050544
+        #2: 互作33-17  value = +0.050417
+        #3: 互作12-17  value = +0.049595
+        #4: 互作39-17  value = +0.049424
+        #5: 互作16-17  value = +0.049205
+        #1: 互作12-5  value = -0.042215
+        #2: 互作93-1  value = -0.040018
+        #3: 互作37-1  value = -0.039351
+        #4: 互作41-1  value = -0.038957
+        #5: 互作127-1  value = -0.038749
+
+2026/10/11
+        csv_path="./data/50_0.1_0_1.0_grande_msa.csv",
+        model_path="./model_weight/50_0.1_0_1.0_mutfinder.pt",
+
+        heads=12,
+        d_ffn=3072,
+        num_msa_blocks=0,
+
+        row_dropout=0.0,
+        column_dropout=0.0,
+        ffn_dropout=0.0,
+
+        num_epochs=1000,
+        early_stop=30,
+        #stop_value=1e-6,
+        lr=1e-4,
+        decay_rate=1e-2,
+        l="l2",
+        n_msa=2,
+        n_seq=25,
+        batch_size=2,
+
+    result
+        epoch 999
+        trying 0
+        新最佳********************
+        loss = 0.000013
+        loss_l2 = 0.003252
+        #1: 位置   0  value = -3.572628
+        #2: 位置   6  value = -1.563898
+        #3: 位置  72  value = -1.465869
+        #4: 位置  76  value = -1.225943
+        #5: 位置  32  value = -0.948301
+        #161: 位置  54  value = +1.683737
+        #162: 位置  96  value = +1.858168
+        #163: 位置 100  value = +2.053164
+
+
