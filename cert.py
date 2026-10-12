@@ -38,7 +38,8 @@ def cert(csv_path = "./data/50a_0.3_0_1.0_grande_msa.csv", model_path = "./model
                         heads=heads, d_ffn=d_ffn, num_msa_blocks=i, col_bias=col_bias,
                         maxtop=maxtop, attntop=attntop)
                 # 读取循环模型
-                for j in [epoch for epoch in range(num_epochs) if (epoch + 1) // (num_epochs // epoch_model)]:
+                for j in [epoch for epoch in range(num_epochs)
+                          if (epoch + 1) % (num_epochs // epoch_model) == 0]:
                     ori_path, ext = os.path.splitext(new_path)
                     new_path = f"{ori_path}{j}{ext}"
                     predict(csv_path=csv_path, model_path=new_path,
@@ -53,7 +54,8 @@ def cert(csv_path = "./data/50a_0.3_0_1.0_grande_msa.csv", model_path = "./model
             predict(csv_path=csv_path, model_path=model_path,
                     heads=heads, d_ffn=d_ffn, num_msa_blocks=num_msa_blocks, col_bias=col_bias,
                     maxtop=maxtop, attntop=attntop)
-            for i in [epoch for epoch in range(num_epochs) if (epoch + 1) // (num_epochs // epoch_model)]:
+            for i in [epoch for epoch in range(num_epochs)
+                      if (epoch + 1) % (num_epochs // epoch_model) == 0]:
                 ori_path, ext = os.path.splitext(model_path)
                 new_path = f"{ori_path}{i}{ext}"
                 predict(csv_path=csv_path, model_path=new_path,

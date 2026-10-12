@@ -120,7 +120,7 @@ def train(
             print(f"loss = {avg_loss:.6f}\n"
                   f"loss_l2 = {avg_loss_l:.6f}")
 
-        if epoch_model and (epoch+1) // (num_epochs//epoch_model):
+        if epoch_model and (epoch+1) % (num_epochs//epoch_model) == 0:
             path, ext = os.path.splitext(model_path)
             new_path = f"{path}{epoch}{ext}"
             torch.save(model.state_dict(), new_path)
