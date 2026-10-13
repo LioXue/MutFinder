@@ -71,9 +71,6 @@ def predict(csv_path,
 
     V = model.head.weight.squeeze(0)   # [L]
 
-    for i,v in enumerate(V):
-        print(i, v)
-
     aV = a * V                          # [L]
     bV = b * V                          # [L]
     diff = aV - bV
@@ -118,7 +115,7 @@ def predict(csv_path,
         "bV": bV.cpu(),
         "diff": diff.cpu(),
     }
-    return max_indices.cpu(), max_values.cpu(), min_values.cpu(), min_indices.cpu(), aux
+    return aux
 
 if __name__ == "__main__":
     max_indices, max_values, min_values, min_indices, aux = predict(
