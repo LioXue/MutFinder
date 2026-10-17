@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from embedding import ESMMSA1bEmbedding
+from Embedding import ESMMSA1bEmbedding
 from TransformerBlock import MSATransformerBlock
 from BiasTransBlock import BiasTransformerBlock
 
@@ -48,7 +48,7 @@ class MutFinder(nn.Module):
             col_bias=col_bias,
         )
 
-        self.head = nn.Linear(L, 1, bias=False)
+        self.head = nn.Linear(L, 1, bias=True)
 
     def forward(self, tokens: torch.Tensor):
         assert torch.is_tensor(tokens), "tokens 必须是 torch.Tensor"

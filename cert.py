@@ -97,7 +97,7 @@ if __name__ == '__main__':
          decay_rate = 1e-2,
          l = "l2",
 
-         maxtop = 163,
+         maxtop = 5,
          attntop = 5,
          mode = "tp"
          )

@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import os
 
-from embedding import ESMMSA1bEmbedding
+from Embedding import ESMMSA1bEmbedding
 from MutFinder import MutFinder
 from Data import build_dataloader
 

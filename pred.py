@@ -1,6 +1,6 @@
 import csv
 import torch
-from embedding import ESMMSA1bEmbedding
+from Embedding import ESMMSA1bEmbedding
 from MutFinder import MutFinder
 
 
@@ -127,6 +127,6 @@ if __name__ == "__main__":
         num_msa_blocks=0,
         col_bias=True,
 
-        maxtop=163,
-        attntop=5,
+        maxtop=10,
+        attntop=10,
     )
